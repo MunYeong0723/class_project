@@ -1,0 +1,13 @@
+/* dangling else example */
+void dangling(void) { if( a < 0 ) if ( a > 3 ) a = 3; else a = 4; }
+
+/* Semantic Error Example */
+/* (1) uninitialized variables a and b 
+   (2) undefined variable c */
+
+void main ( void )
+{
+	int a;
+	int b;
+	c = a + b;
+}

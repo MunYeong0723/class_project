@@ -1,0 +1,2 @@
+int local[3];
+void func(int a, int b[]){}
